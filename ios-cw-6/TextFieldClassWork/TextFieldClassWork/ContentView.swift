@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //Add your variables here ضيفوا المتغيرات اهني
-    
+    @State var username : String = ""
     
     var body: some View {
         VStack(spacing:40){
@@ -23,7 +23,7 @@ struct ContentView: View {
                 .scaledToFit()
             //Add your TextField Here ضيفوه تحت هالسطر
             //.textFieldStyle(.roundedBorder) < عشان تعدلون على شكله تقدرون تضيفون
-            
+            TextField("username", text:$username)
             
         }.padding()
     }
